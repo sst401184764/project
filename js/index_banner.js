@@ -3,33 +3,33 @@ $(()=>{
         type:"get",
         url:"data/index/banner.php",
     }).then(data=>{
-        var html="";
-        for(var item of data){
-            html+=`<div class="banner_content" game="${item.bid}">
-            <div class="banner_pic">
-                <div class="banner_mian_pic">
-                    <img src="${item.lg}"
-                            data-src="${item.lg}">
-                </div>
-                <div class="banner_oth_pic">
-                    <p>${item.game}</p>
-                    <img src="${item.md1}">
-                    <img src="${item.md2}">
-                    <img src="${item.md3}">
-                    <img src="${item.md4}">
-                    <div class="banner_price">
-                        <p>${item.title}</p>
-                        <p><span>${item.tag1}</span>`;
-        if(item.tag2)html+=`<span>${item.tag2}</span>`;
-        if(item.tag3)html+=`<span>${item.tag3}</span>`;
-        html+=`</p>
-        <p>￥${item.price}`
-        if(item.linux==1)html+=`<img src="img/body/banner/icon_platform_linux.png">`
-        if(item.mac==1)html+=`<img src="img/body/banner/icon_platform_mac.png">`
-        if(item.win==1)html+=`<img src="img/body/banner/icon_platform_win.png">`
-        html+=`</p></div></div></div></div>`;
-        }
-        $(".banner>.banner_contents").html(html).children().first().addClass("active");
+//         var html="";
+//         for(var item of data){
+//             html+=`<div class="banner_content" game="${item.bid}">
+//             <div class="banner_pic">
+//                 <div class="banner_mian_pic">
+//                     <img src="${item.lg}"
+//                             data-src="${item.lg}">
+//                 </div>
+//                 <div class="banner_oth_pic">
+//                     <p>${item.game}</p>
+//                     <img src="${item.md1}">
+//                     <img src="${item.md2}">
+//                     <img src="${item.md3}">
+//                     <img src="${item.md4}">
+//                     <div class="banner_price">
+//                         <p>${item.title}</p>
+//                         <p><span>${item.tag1}</span>`;
+//         if(item.tag2)html+=`<span>${item.tag2}</span>`;
+//         if(item.tag3)html+=`<span>${item.tag3}</span>`;
+//         html+=`</p>
+//         <p>￥${item.price}`
+//         if(item.linux==1)html+=`<img src="img/body/banner/icon_platform_linux.png">`
+//         if(item.mac==1)html+=`<img src="img/body/banner/icon_platform_mac.png">`
+//         if(item.win==1)html+=`<img src="img/body/banner/icon_platform_win.png">`
+//         html+=`</p></div></div></div></div>`;
+//        }
+//         $(".banner>.banner_contents").html(html).children().first().addClass("active");
         $(".banner_content").hover(function(){
             clearInterval(timer);
             timer=null;
