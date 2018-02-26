@@ -1,0 +1,43 @@
+#footer{
+	background:linear-gradient(to bottom,#131C27,#0D141C);
+	margin-top:40px;
+	width: 100%
+}
+#footer>div{
+	height:140px;
+	width:940px;
+	margin:auto;
+	padding-top:16px;
+	padding-bottom:60px;
+	box-sizing:border-box;
+}
+#footer #footer_content{
+	color:#8F98A0;
+	height:48px;
+	padding-top:16px;
+}
+a:hover{
+	color:#fff;
+}
+#footer_ruler{
+	height:8px;
+	width:100%;
+}
+#footer #footer_content>div{
+	font-size:12px;
+	float:left;
+}
+#logo_valve_footer{
+	float:left;
+	margin-top:4px;
+	margin-right:10px;
+}
+#logo_steam_footer{
+	float:right;
+	margin-top:4px;
+}
+#valve_link{
+	margin-top:8px;
+	color:#8F98A0;
+	font-size:13px;
+}

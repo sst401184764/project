@@ -1,0 +1,126 @@
+*{color:#ccc;}
+.global_header{
+	background:#171A21;
+	width: 100%
+}
+.global_header *:hover{
+	color:#fff;
+}
+.global_header>div{
+	height:100px;
+	width:940px;
+	margin:auto;
+}
+.header_logo{
+	margin-top:28px;
+}
+.head_list{
+	margin-top:39px;
+}
+.header_menu{
+	display:flex;
+	margin-top: 5px	;
+}
+.btn_installsteam{
+	width:103px;
+	height:21px;
+	overflow:hidden;
+	background:linear-gradient(to bottom,#769506,#596F0C);
+	line-height:21px;
+	border-radius:1px;
+	padding-right:8px;
+}
+.btn_installsteam>img{
+	vertical-align:top;	
+}
+.btn_installsteam:hover{
+	cursor: pointer;
+}
+.user{
+	display:none;
+	position: relative;
+ }
+.user.active{
+	display: flex;
+}
+.user>a.user_email{
+	margin:0 15px;
+	display: block;
+	padding:7px 7px;
+	height: 21px;
+	width: 24px;
+	background: #333;
+	box-sizing: border-box;
+}
+.user>a.user_email>img{
+	width:10px;
+	height:7px;
+}
+.user>.show_uname>span{
+	font-size: 13px;
+}
+.user>.show_uname>div>a{
+	font-size: 10px;
+}
+.user>.show_uname>span:hover{
+	cursor: pointer;
+}
+.user>.show_uname>.pull_down_list{
+	margin-top:9px;
+	margin-left: 5px;
+}
+.user>img{
+	width: 32px;
+	height: 32px;
+	border:2px solid #00aeef;
+	margin-left: 10px;
+}
+.login{
+	position: relative;
+	display: none;
+}
+.login.active{
+	display:flex;
+}
+.login>*{
+	margin:0 5px;
+	font-size: 12px;
+}
+.login>a{
+	margin-left:10px;
+	margin-top: 1px	;
+}
+.login>.language_list{
+	padding:0 4px;
+	border: 1px solid transparent;
+}
+.login>.language_list:hover{
+	cursor: pointer;
+}
+.login>.language_list.active{
+	border-color: #82807C;
+}
+.login div.pull_down_list{
+	margin-top:6px;
+	margin-left: 5px;
+}
+ul.header_languages{
+	width: 237px;
+	background: #3b3938;
+	border: 1px solid #ccc;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	box-sizing: border-box;
+	z-index: 10;
+}
+ul.header_languages>li{
+	color: #ddd;
+	font-size: 13px;
+	padding: 5px;
+	padding-left: 10px;
+}
+ul.header_languages>li:hover{
+	background: #212D3D;
+	cursor: pointer;
+}

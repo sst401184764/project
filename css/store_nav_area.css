@@ -1,0 +1,129 @@
+.menu .store_nav_area{
+    margin-top:30px;
+    line-height:31px;
+    height:31px;
+    padding-left:10px;
+    border-radius:2px;
+    background-color:#377197;
+    box-shadow:0 0 10px 1px #000;
+}
+.menu ul.store_list{
+    width:500px;
+    float:left;
+    display:flex;
+    justify-content:space-between;
+}
+.menu ul.store_list li{
+    border-right: 1px solid #333;
+    font-size: 15px;
+    padding-right:17px;
+}
+.menu ul.store_list li>a{
+    color:#fff;
+}
+.menu ul.store_list li:hover{
+    cursor:pointer;
+}
+.menu ul.store_list .pull_down_list{
+    margin-left: 6px;
+    margin-top: 13px;
+}
+.menu ul.store_list .store_pull_down_list{
+    display:none;
+    color:#000;
+    position: absolute;
+    top: 31px;
+    left: 0;
+    padding: 5px 10px;
+    background:linear-gradient(to bottom, #e3eaef 5%, #c7d5e0 95%);
+    z-index: 5;
+    box-shadow: 0 0 10px 1px #000;
+}
+.menu ul.store_list .store_pull_down_list.games{
+    left: 109px;
+}
+.menu ul.store_list .store_pull_down_list.software{
+    left: 192px;
+}
+.menu ul.store_list .store_pull_down_list.hardware{
+    left: 277px;
+}
+.menu ul.store_list .store_pull_down_list.video{
+    left: 360px;
+}
+.menu ul.store_list .store_pull_down_list.active{
+    display:block;
+}
+.menu ul.store_list .store_pull_down_list li{
+    border: none;
+    padding: 1px 0;
+}
+.menu ul.store_list .store_pull_down_list li>a{
+    color:#000;
+    font-size: 15px;;
+}
+.menu ul.store_list .store_pull_down_list li:hover{
+    background: #333333;
+}
+.menu ul.store_list .store_pull_down_list li:hover>a{
+    color: #ffffff;
+}
+.menu ul.store_list .store_pull_down_list li.ex_list{
+    font-size: 13px;
+    color: #4f94bc;
+    background: none;
+}
+.menu ul.store_list .store_pull_down_list li:hover.ex_list{
+    background:none;
+    cursor: default;
+}
+.menu ul.store_list .store_pull_down_list li>.hr{
+    margin: 6px 10px 6px 0;
+    background: #FFFFFF;
+}
+.menu ul.store_list .store_pull_down_list li:hover.has_hr{
+    color:#000;
+    background:none;
+    cursor: default;
+}
+.menu .store_reseach{
+    width:240px;
+    height:29px;
+    background:#316282;
+    color:#ccc;
+    float:right;
+    padding:1px 0;
+    padding-left:10px;
+    box-sizing:border-box;
+    border:1px solid #22445B;
+    border-radius:5px;
+    position:relative;
+    top:1px;
+}
+.menu .store_reseach:hover{
+    border-color:#4C9ACC;
+}
+.menu .store_reseach>input{
+    height:26px;
+    width:190px;
+    background:rgba(0,0,0,0);
+    line-height:26px;
+    position:relative;
+    top:-3px;
+}
+.menu .store_reseach>a>img{
+    border:1px solid #333;
+    border-radius:3px;
+    position:relative;
+    top:-1px;
+    left:5px;
+}
+.menu .home_page_gutter{
+    width:210px;
+    height:1000px;
+    position:absolute;
+    top:-30px;
+    left:-210px;
+    box-sizing:border-box;
+
+}
